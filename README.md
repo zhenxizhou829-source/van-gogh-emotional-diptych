@@ -1,8 +1,8 @@
 # Van Gogh Emotional Diptych
 
-> A Codex skill, designed for Codex and adaptable by compatible agents.
+> Not a “Van Gogh filter.” A Codex skill that learns from Van Gogh’s way of seeing: it paints not what things look like, but what they feel like.
 
-A Codex skill that turns one source photograph into an editorial diptych: the original photograph remains untouched, while a separately constructed painting makes its underlying emotional relation visible.
+A Codex skill, designed for Codex and adaptable by compatible agents. It turns one source photograph into an editorial diptych: the original photograph remains untouched, while a separately constructed painting makes its underlying emotional relation visible.
 
 This is **not** an image-to-image style-transfer skill. It does not repaint the photograph or preserve its camera view beneath Van Gogh-like brushwork. The painting is a new scene, built from the photograph's felt meaning; it borrows only controlled paint behaviour from one selected board.
 
