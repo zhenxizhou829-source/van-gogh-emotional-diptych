@@ -1,0 +1,4 @@
+interface:
+  display_name: "Van Gogh Emotional Diptych"
+  short_description: "将原图与梵高式抽象、色彩和情绪转译组成等画格双联画"
+  default_prompt: "Use $van-gogh-emotional-diptych to turn my photo into an equal-cell diptych with a selective, emotionally forceful Van Gogh interpretation."
