@@ -6,8 +6,6 @@ A Codex skill that turns one source photograph into an editorial diptych: the or
 
 This is **not** an image-to-image style-transfer skill. It does not repaint the photograph or preserve its camera view beneath Van Gogh-like brushwork. The painting is a new scene, built from the photograph's felt meaning; it borrows only controlled paint behaviour from one selected board.
 
-> **中文提示：`README.md` 与 `LICENSE.md` 面向人类读者；只有 `SKILL.md` 及其明确链接、按需读取的资源参与 skill 的触发与执行。**
-
 ## What it produces
 
 For each source photograph, the skill delivers one composed PNG diptych containing:
@@ -30,12 +28,24 @@ The skill is intentionally opinionated about the artistic outcome. Do not use it
 
 ```text
 van-gogh-emotional-diptych/
-├── SKILL.md       # Runtime instructions for Codex
-├── references/    # Selectively loaded artistic and review guidance
-├── scripts/       # Deterministic composition helper
-├── agents/        # Optional interface metadata
-├── README.md      # Human-facing project documentation
-└── LICENSE.md     # Human-facing legal terms
+├── .gitignore
+├── SKILL.md                         # Runtime instructions for Codex
+├── agents/
+│   └── openai.yaml                  # Optional interface metadata
+├── references/                      # Selectively loaded artistic and review guidance
+│   ├── boards/
+│   │   ├── index.md                 # Board-selection guidance
+│   │   └── {anxiety, hardship, stillness,
+│   │       turbulence, vitality}.png
+│   ├── evaluation.md                # Review criteria
+│   ├── failure-modes.md             # Targeted repair guidance
+│   ├── layout-and-caption.md        # Final composition rules
+│   ├── perceptual-translation.md    # Felt-world selection
+│   └── visual-grammar.md            # New-scene construction
+├── scripts/
+│   └── compose_diptych.py           # Deterministic composition helper
+├── README.md                        # Human-facing project documentation
+└── LICENSE.md                       # Human-facing legal terms
 ```
 
 ## Design principles
@@ -52,5 +62,3 @@ Before publishing derivative work or adding new source images, boards, or visual
 ## License
 
 Released under the [PolyForm Noncommercial License 1.0.0](LICENSE.md). Noncommercial use, study, modification, and redistribution are permitted under its terms. Commercial use or sale is not licensed; request a separate commercial license from Briar Shen before proceeding.
-
-> **中文提示：本 skill 可用于非商业的使用、学习、修改和再分发；商用、出售或将其用于商业服务，须先获得 Briar Shen 的明确许可。**
