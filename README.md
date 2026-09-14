@@ -56,7 +56,7 @@ For each source photograph, the skill delivers one final PNG diptych:
 
 The two outer cells are equal in size. Portrait sources are normally arranged left to right, with the source on the left; landscape and square sources are normally arranged top to bottom. The painting sits on a warm ivory interpretation cell with its title. It is never asked to generate the split layout itself.
 
-[`compose_diptych.py`](scripts/compose_diptych.py) makes the final composition deterministic. It preserves the normalized source pixels, rejects interpretations whose aspect ratio differs by more than 1%, and confines scaling and captioning to the interpretation cell.
+Final composition is deterministic rather than image-model generated. It preserves the normalized source pixels, rejects interpretations whose aspect ratio differs by more than 1%, and confines scaling and captioning to the interpretation cell.
 
 ## Use with Codex
 
